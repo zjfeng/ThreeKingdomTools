@@ -1,0 +1,33 @@
+# 资源文件配置
+assets:
+  path: './assets/'  # 资源文件根目录
+  images:
+    wujiang1: 'button_wujiang1.png'
+    wujiang2: 'button_wujiang2.png'
+    game_window: 'game_window.png'
+    back_button: 'button_back.png'
+
+# 自动化配置
+automation:
+  confidence: 0.8  # 图像识别置信度
+  wait_time: 1.0   # 默认等待时间
+  click_offset:
+    x: 100         # 相对于窗口的X偏移
+    y: 300         # 相对于窗口的Y偏移
+
+# 屏幕配置
+screen:
+  min_width: 1024
+  min_height: 768
+
+# config.yaml 新增内容
+screenshot:
+  path: "screenshots/"  # 截图保存路径（相对于项目根目录）
+scroll:
+  max_y: 800  # 鼠标Y轴超过此值时触发滚动（根据实际屏幕调整）
+mouse:
+  step_y: 30  # 每次鼠标下移像素量
+
+# 武将
+heroes:
+  total: 237  # 实际武将总数量（根据需求修改）
